@@ -37,7 +37,7 @@ function foo(arr) {
 foo(args);
 console.log(args); // [1,2,3,4];
 
-将复合类型创建副本 进行值复制传递
+// 将复合类型创建副本 进行值复制传递
 function foo1(arr) {
   arr.push(4);
   arr = [4,5,6];
@@ -47,7 +47,7 @@ foo1(args.slice()); // 传入的是新创建的副本 不会影响最外面的�
 
 console.log(args);
 
-将简单值 封装为复合类型 进行引用传递
+// 将简单值 封装为复合类型 进行引用传递
 function foo2(obj) {
   obj.a = 42;
 }
